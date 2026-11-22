@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         betterEreter
+// @name         betterEreter_Beta
 // @version      0.6
 // @description  better ereter.net
 // @author       lily.C
