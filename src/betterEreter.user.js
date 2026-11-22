@@ -5,11 +5,11 @@
 // @author       lily.C
 // @match        https://ereter.net/iidxplayerdata/*/analytics/combined/
 // @match        https://ereter.net/iidxplayerdata/*/level/12/
-// @match        file:///*/html/index.html
+// @match        https://lilycodeholic.github.io/betterEreterNet_Beta/*
 // @grant        GM_setValue
 // @grant        GM_getValue
-// @updateURL    https://github.com/LilyCodeholic/betterEreterNet/raw/master/src/betterEreter.user.js
-// @downloadURL  https://github.com/LilyCodeholic/betterEreterNet/raw/master/src/betterEreter.user.js
+// @updateURL    https://github.com/LilyCodeholic/betterEreterNet_Beta/raw/master/src/betterEreter.user.js
+// @downloadURL  https://github.com/LilyCodeholic/betterEreterNet_Beta/raw/master/src/betterEreter.user.js
 // ==/UserScript==
 
 (() =>
@@ -1986,7 +1986,7 @@ if(window.location.href.includes("ereter.net"))
 		injectStyles()
 	})
 }
-else if(window.location.pathname.includes("index.html"))
+else if(window.location.hostname.endsWith(".github.io"))
 {
 	renderIndexPage()
 }
