@@ -1,0 +1,123 @@
+<html>
+<head>
+	<title>dr of ereter</title>
+	<style>
+		body
+		{
+			background-color: #252830;
+			font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+			margin: 20px;
+		}
+		#titles thead th
+		{
+			background-color: #434857;
+			color: #cfd2da;
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+			z-index: 1;
+		}
+		td
+		{
+			background-color: #434857;
+			color: #cfd2da;
+			border-bottom: 1px solid #535867;
+		}
+		.tdOption
+		{
+			text-align: left;
+		}
+		.tdTitle
+		{
+			text-align: left;
+		}
+		.tdEasy
+		{
+			text-align: right;
+			background-color: rgb(70, 122, 77);
+		}
+		.tdHard
+		{
+			text-align: right;
+			background-color: rgb(125, 84, 96);
+		}
+		.tdExHard
+		{
+			text-align: right;
+			background-color: rgb(119, 119, 40);
+		}
+		.spanFlip
+		{
+			width: 1.5em;
+			display:inline-block;
+			text-align: center;
+
+		}
+		.spanLeft, .spanRight
+		{
+			width: 2rem;
+			display:inline-block;
+			text-align: center;
+		}
+		.dph
+		{
+			color: rgb(239, 239, 81);
+		}
+		.dpa
+		{
+			color: rgb(251, 168, 193);
+		}
+		.dpl
+		{
+			color: rgb(206, 142, 249);
+		}
+		.categories
+		{
+			position: fixed;
+			display: flex;
+			height: calc(100vh - 6rem);
+			top: 3rem;
+			right: 0;
+			flex-flow: column;
+			justify-content: space-between;
+			z-index: 9;
+			padding: 0 0.4rem 0.4rem;
+		}
+		.categories div
+		{
+			color: lightgray;
+			font-size: 0.75rem;
+			cursor: pointer;
+			text-align: center;
+			user-select: none;
+		}
+		.categories div:hover
+		{
+			color: #91e1ff;
+		}
+		tr[id^="record"]
+		{
+			scroll-margin-top: 1.5rem;
+		}
+	</style>
+</head>
+<!-- 曲名データの読み込み -->
+<script src="./js/titles.js"></script>
+
+<body>
+	<table id="titles" aria-label="☆12 list">
+		<thead>
+			<tr>
+				<th data-sort="string">Option</th>
+				<th data-sort="string">Title</th>
+				<th data-sort="string">EASY</th>
+				<th data-sort="string">HARD</th>
+				<th data-sort="string">EXH</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- データ挿入位置 -->
+		</tbody>
+	</table>
+</body>
+</html>
